@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Download Buttons</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            flex-basis: 200px; /* Adjust as needed */
+            text-align: center;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none; /* For anchor tags styled as buttons */
+            display: inline-block;
+        }
+
+        /* --- Button Style 1: Primary Blue --- */
+        .button-primary {
+            background-color: #007bff;
+            color: white;
+        }
+        .button-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 2: Success Green --- */
+        .button-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .button-success:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 3: Danger Red --- */
+        .button-danger {
+            background-color: #dc3545;
+            color: white;
+        }
+        .button-danger:hover {
+            background-color: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 4: Warning Orange --- */
+        .button-warning {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .button-warning:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 5: Info Cyan --- */
+        .button-info {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .button-info:hover {
+            background-color: #138496;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 6: Dark Outline --- */
+        .button-outline-dark {
+            background-color: transparent;
+            color: #343a40;
+            border: 2px solid #343a40;
+        }
+        .button-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 7: Gradient Purple-Pink --- */
+        .button-gradient-purple {
+            background: linear-gradient(45deg, #6f42c1, #e83e8c);
+            color: white;
+        }
+        .button-gradient-purple:hover {
+            background: linear-gradient(45deg, #5a359e, #d02c7a);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 8: Pill Shape --- */
+        .button-pill {
+            background-color: #6c757d;
+            color: white;
+            border-radius: 50px; /* Makes it pill-shaped */
+            padding: 12px 30px;
+        }
+        .button-pill:hover {
+            background-color: #5a6268;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 9: Frosted Glass Effect --- */
+        .button-frosted {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            color: #333;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button-frosted:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* --- Button Style 10: Ghost Button (subtle) --- */
+        .button-ghost {
+            background-color: transparent;
+            color: #007bff;
+            border: 1px solid #007bff;
+            box-shadow: none;
+        }
+        .button-ghost:hover {
+            background-color: #007bff;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="download-button button-primary">Download</button>
+    <button class="download-button button-success">Download</button>
+    <button class="download-button button-danger">Download</button>
+    <button class="download-button button-warning">Download</button>
+    <button class="download-button button-info">Download</button>
+    <button class="download-button button-outline-dark">Download</button>
+    <button class="download-button button-gradient-purple">Download</button>
+    <button class="download-button button-pill">Download</button>
+    <button class="download-button button-frosted">Download</button>
+    <button class="download-button button-ghost">Download</button>
+
+    <button class="download-button" style="background-color: #6a11cb; color: white; border-radius: 5px; font-weight: bold;">Download</button>
+    <button class="download-button" style="background-color: #20c997; color: #333; border: 2px dashed #20c997;">Download</button>
+    <button class="download-button" style="background-color: #fd7e14; color: white; text-transform: uppercase; letter-spacing: 1px;">Download</button>
+    <button class="download-button" style="background-color: #e6e6fa; color: #6f42c1; border: 1px solid #6f42c1; box-shadow: inset 0 0 5px rgba(111, 66, 193, 0.3);">Download</button>
+    <button class="download-button" style="background: linear-gradient(to right, #00c6ff, #0072ff); color: white; border-radius: 20px;">Download</button>
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Modern Download Buttons</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Existing Styles (from previous response - you can merge these) */
+        .button-primary { background-color: #007bff; color: white; }
+        .button-primary:hover { background-color: #0056b3; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-success { background-color: #28a745; color: white; }
+        .button-success:hover { background-color: #218838; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-danger { background-color: #dc3545; color: white; }
+        .button-danger:hover { background-color: #c82333; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-warning { background-color: #ffc107; color: #333; }
+        .button-warning:hover { background-color: #e0a800; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-info { background-color: #17a2b8; color: white; }
+        .button-info:hover { background-color: #138496; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-outline-dark { background-color: transparent; color: #343a40; border: 2px solid #343a40; }
+        .button-outline-dark:hover { background-color: #343a40; color: white; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-gradient-purple { background: linear-gradient(45deg, #6f42c1, #e83e8c); color: white; }
+        .button-gradient-purple:hover { background: linear-gradient(45deg, #5a359e, #d02c7a); transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-pill { background-color: #6c757d; color: white; border-radius: 50px; padding: 12px 30px; }
+        .button-pill:hover { background-color: #5a6268; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-frosted { background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); color: #333; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .button-frosted:hover { background-color: rgba(255, 255, 255, 0.3); transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
+        .button-ghost { background-color: transparent; color: #007bff; border: 1px solid #007bff; box-shadow: none; }
+        .button-ghost:hover { background-color: #007bff; color: white; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); }
+
+
+        /* --- New Button Styles (11-20) --- */
+
+        /* Button Style 11: Soft Coral */
+        .button-coral {
+            background-color: #FF6F61;
+            color: white;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        .button-coral:hover {
+            background-color: #E05D50;
+            transform: scale(1.02);
+            box-shadow: 0 5px 10px rgba(255, 111, 97, 0.3);
+        }
+
+        /* Button Style 12: Teal Outline with Fill */
+        .button-outline-teal {
+            background-color: transparent;
+            color: #20c997;
+            border: 2px solid #20c997;
+        }
+        .button-outline-teal:hover {
+            background-color: #20c997;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(32, 201, 151, 0.25);
+        }
+
+        /* Button Style 13: Elegant Grey */
+        .button-elegant-grey {
+            background-color: #e9ecef;
+            color: #495057;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+        }
+        .button-elegant-grey:hover {
+            background-color: #dee2e6;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Style 14: Radiant Gold */
+        .button-gold {
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #8B4513; /* Dark brown for contrast */
+            font-weight: 700;
+            border-radius: 30px;
+            padding: 14px 28px;
+        }
+        .button-gold:hover {
+            background: linear-gradient(to right, #FFA500, #FFD700);
+            transform: scale(1.03);
+            box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Button Style 15: Dark Slate with Light Text */
+        .button-dark-slate {
+            background-color: #34495e;
+            color: white;
+            border-radius: 6px;
+        }
+        .button-dark-slate:hover {
+            background-color: #2c3e50;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(52, 73, 94, 0.2);
+        }
+
+        /* Button Style 16: Neon Green (subtle) */
+        .button-neon-green {
+            background-color: #7FFF00; /* Chartreuse */
+            color: #333;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(127, 255, 0, 0.4);
+        }
+        .button-neon-green:hover {
+            background-color: #72E000;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(127, 255, 0, 0.6);
+        }
+
+        /* Button Style 17: Transparent with Border Bottom */
+        .button-underline {
+            background-color: transparent;
+            color: #007bff;
+            border: none;
+            border-bottom: 2px solid #007bff;
+            border-radius: 0; /* Remove existing border-radius */
+            box-shadow: none;
+            padding: 12px 0; /* Adjust padding for no side borders */
+        }
+        .button-underline:hover {
+            color: #0056b3;
+            border-bottom-color: #0056b3;
+            transform: none; /* No translateY */
+            background-color: rgba(0, 123, 255, 0.05); /* Subtle background on hover */
+            box-shadow: none;
+        }
+
+        /* Button Style 18: Glassy Purple */
+        .button-glassy-purple {
+            background: rgba(138, 43, 226, 0.6); /* BlueViolet with transparency */
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(138, 43, 226, 0.8);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .button-glassy-purple:hover {
+            background: rgba(138, 43, 226, 0.8);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Style 19: Minimalistic with Icon Space (No actual icon here, just styling for it) */
+        .button-minimal-icon {
+            background-color: #f8f9fa;
+            color: #343a40;
+            border: 1px solid #ced4da;
+            padding-right: 35px; /* Space for a potential icon */
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        .button-minimal-icon:hover {
+            background-color: #e2e6ea;
+            border-color: #dae0e5;
+            transform: translateY(-1px);
+        }
+        /* You'd typically add an icon using a pseudo-element or an actual <img>/SVG here */
+
+        /* Button Style 20: Embossed Effect */
+        .button-embossed {
+            background-color: #f0f2f5;
+            color: #333;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .button-embossed:hover {
+            background-color: #e0e2e5;
+            transform: translateY(-1px);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="download-button button-primary">Download</button>
+    <button class="download-button button-success">Download</button>
+    <button class="download-button button-danger">Download</button>
+    <button class="download-button button-warning">Download</button>
+    <button class="download-button button-info">Download</button>
+    <button class="download-button button-outline-dark">Download</button>
+    <button class="download-button button-gradient-purple">Download</button>
+    <button class="download-button button-pill">Download</button>
+    <button class="download-button button-frosted">Download</button>
+    <button class="download-button button-ghost">Download</button>
+
+    <button class="download-button button-coral">Download</button>
+    <button class="download-button button-outline-teal">Download</button>
+    <button class="download-button button-elegant-grey">Download</button>
+    <button class="download-button button-gold">Download</button>
+    <button class="download-button button-dark-slate">Download</button>
+    <button class="download-button button-neon-green">Download</button>
+    <button class="download-button button-underline">Download</button>
+    <button class="download-button button-glassy-purple">Download</button>
+    <button class="download-button button-minimal-icon">Download</button>
+    <button class="download-button button-embossed">Download</button>
+
+    </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Modern Download Buttons</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .download-button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Existing Styles (from previous responses - merge them here) */
+        /* You should already have styles for button-primary through button-embossed */
+        .button-primary { background-color: #007bff; color: white; }
+        .button-primary:hover { background-color: #0056b3; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-success { background-color: #28a745; color: white; }
+        .button-success:hover { background-color: #218838; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-danger { background-color: #dc3545; color: white; }
+        .button-danger:hover { background-color: #c82333; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-warning { background-color: #ffc107; color: #333; }
+        .button-warning:hover { background-color: #e0a800; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-info { background-color: #17a2b8; color: white; }
+        .button-info:hover { background-color: #138496; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-outline-dark { background-color: transparent; color: #343a40; border: 2px solid #343a40; }
+        .button-outline-dark:hover { background-color: #343a40; color: white; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-gradient-purple { background: linear-gradient(45deg, #6f42c1, #e83e8c); color: white; }
+        .button-gradient-purple:hover { background: linear-gradient(45deg, #5a359e, #d02c7a); transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-pill { background-color: #6c757d; color: white; border-radius: 50px; padding: 12px 30px; }
+        .button-pill:hover { background-color: #5a6268; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+        .button-frosted { background-color: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); color: #333; border: 1px solid rgba(255, 255, 255, 0.3); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .button-frosted:hover { background-color: rgba(255, 255, 255, 0.3); transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
+        .button-ghost { background-color: transparent; color: #007bff; border: 1px solid #007bff; box-shadow: none; }
+        .button-ghost:hover { background-color: #007bff; color: white; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); }
+        .button-coral { background-color: #FF6F61; color: white; border-radius: 10px; font-weight: 700; }
+        .button-coral:hover { background-color: #E05D50; transform: scale(1.02); box-shadow: 0 5px 10px rgba(255, 111, 97, 0.3); }
+        .button-outline-teal { background-color: transparent; color: #20c997; border: 2px solid #20c997; }
+        .button-outline-teal:hover { background-color: #20c997; color: white; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(32, 201, 151, 0.25); }
+        .button-elegant-grey { background-color: #e9ecef; color: #495057; border-radius: 4px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07); }
+        .button-elegant-grey:hover { background-color: #dee2e6; transform: translateY(-1px); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+        .button-gold { background: linear-gradient(to right, #FFD700, #FFA500); color: #8B4513; font-weight: 700; border-radius: 30px; padding: 14px 28px; }
+        .button-gold:hover { background: linear-gradient(to right, #FFA500, #FFD700); transform: scale(1.03); box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4); }
+        .button-dark-slate { background-color: #34495e; color: white; border-radius: 6px; }
+        .button-dark-slate:hover { background-color: #2c3e50; transform: translateY(-2px); box-shadow: 0 6px 8px rgba(52, 73, 94, 0.2); }
+        .button-neon-green { background-color: #7FFF00; color: #333; border-radius: 5px; box-shadow: 0 0 10px rgba(127, 255, 0, 0.4); }
+        .button-neon-green:hover { background-color: #72E000; transform: scale(1.02); box-shadow: 0 0 15px rgba(127, 255, 0, 0.6); }
+        .button-underline { background-color: transparent; color: #007bff; border: none; border-bottom: 2px solid #007bff; border-radius: 0; box-shadow: none; padding: 12px 0; }
+        .button-underline:hover { color: #0056b3; border-bottom-color: #0056b3; transform: none; background-color: rgba(0, 123, 255, 0.05); box-shadow: none; }
+        .button-glassy-purple { background: rgba(138, 43, 226, 0.6); backdrop-filter: blur(8px); border: 1px solid rgba(138, 43, 226, 0.8); color: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+        .button-glassy-purple:hover { background: rgba(138, 43, 226, 0.8); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); }
+        .button-minimal-icon { background-color: #f8f9fa; color: #343a40; border: 1px solid #ced4da; padding-right: 35px; position: relative; overflow: hidden; border-radius: 5px; }
+        .button-minimal-icon:hover { background-color: #e2e6ea; border-color: #dae0e5; transform: translateY(-1px); }
+        .button-embossed { background-color: #f0f2f5; color: #333; border-top: 1px solid rgba(255, 255, 255, 0.5); border-left: 1px solid rgba(255, 255, 255, 0.5); border-right: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
+        .button-embossed:hover { background-color: #e0e2e5; transform: translateY(-1px); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 5px rgba(0, 0, 0, 0.1); }
+
+
+        /* --- New Button Styles (21-30) --- */
+
+        /* Button Style 21: Playful Pink */
+        .button-playful-pink {
+            background-color: #FF69B4; /* Hot Pink */
+            color: white;
+            border-radius: 12px 0 12px 0; /* Irregular border radius */
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .button-playful-pink:hover {
+            background-color: #FF1493; /* Deep Pink */
+            transform: rotate(-2deg) scale(1.02);
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.4);
+        }
+
+        /* Button Style 22: Subtle Outline with Dash */
+        .button-subtle-dash {
+            background-color: transparent;
+            color: #6c757d;
+            border: 1px dashed #adb5bd;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+        .button-subtle-dash:hover {
+            background-color: #f8f9fa;
+            color: #495057;
+            border-color: #6c757d;
+            transform: translateY(-1px);
+        }
+
+        /* Button Style 23: Rich Emerald Green */
+        .button-emerald {
+            background-color: #2ECC71; /* Emerald Green */
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+        }
+        .button-emerald:hover {
+            background-color: #27AE60; /* Deeper Emerald */
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(46, 204, 113, 0.4);
+        }
+
+        /* Button Style 24: Skewed Rectangle */
+        .button-skewed {
+            background-color: #3498db; /* Peter River */
+            color: white;
+            border-radius: 0;
+            transform: skewX(-15deg); /* Skew effect */
+            padding: 12px 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .button-skewed > span { /* To keep text straight */
+            display: inline-block;
+            transform: skewX(15deg);
+        }
+        .button-skewed:hover {
+            background-color: #2980b9; /* Belize Hole */
+            transform: skewX(-10deg) scale(1.02);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Button Style 25: Carbon Fiber Texture (Simulated) */
+        .button-carbon {
+            background-color: #333;
+            background-image: repeating-linear-gradient(-45deg,
+                                rgba(255,255,255,.05) 0px,
+                                rgba(255,255,255,.05) 1px,
+                                transparent 1px,
+                                transparent 5px);
+            background-size: 4px 4px;
+            color: white;
+            border-radius: 3px;
+            font-family: monospace;
+            letter-spacing: 0.5px;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .button-carbon:hover {
+            background-color: #444;
+            transform: translateY(-1px);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Style 26: Minimalist with Left Border Accent */
+        .button-accent-left {
+            background-color: white;
+            color: #333;
+            border: 1px solid #eee;
+            border-left: 5px solid #ff4500; /* OrangeRed accent */
+            padding: 12px 20px; /* Adjust padding for accent */
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .button-accent-left:hover {
+            background-color: #f9f9f9;
+            transform: translateX(3px); /* Slide slightly */
+            border-color: #ddd;
+            border-left-color: #d35400; /* Darker orange */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Button Style 27: Circular Button (larger size) */
+        .button-circle {
+            background-color: #9b59b6; /* Amethyst */
+            color: white;
+            border-radius: 50%; /* Makes it a circle */
+            width: 70px; /* Equal width and height */
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px; /* Adjust font size for circular text */
+            text-align: center;
+            line-height: 1.2;
+            padding: 0; /* Remove default padding */
+            box-shadow: 0 5px 10px rgba(155, 89, 182, 0.3);
+        }
+        .button-circle:hover {
+            background-color: #8e44ad; /* Darker Amethyst */
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(155, 89, 182, 0.4);
+        }
+
+        /* Button Style 28: Outlined & Filled on Hover */
+        .button-hover-fill {
+            background-color: transparent;
+            color: #e74c3c; /* Alizarin */
+            border: 2px solid #e74c3c;
+            border-radius: 5px;
+            box-shadow: none;
+            overflow: hidden; /* For smooth fill effect */
+            position: relative;
+            z-index: 1;
+        }
+        .button-hover-fill::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e74c3c; /* Fill color */
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-out;
+            z-index: -1;
+        }
+        .button-hover-fill:hover {
+            color: white;
+            transform: none;
+        }
+        .button-hover-fill:hover::before {
+            transform: translateX(0);
+        }
+
+        /* Button Style 29: Subtle 3D Push Effect */
+        .button-3d-push {
+            background-color: #f39c12; /* Orange */
+            color: white;
+            border-bottom: 4px solid #e67e22; /* Darker orange for depth */
+            border-radius: 5px;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+        }
+        .button-3d-push:active { /* When clicked */
+            transform: translateY(2px);
+            border-bottom-width: 2px;
+            box-shadow: none;
+        }
+        .button-3d-push:hover {
+            background-color: #e67e22; /* Darker orange on hover */
+            transform: translateY(-1px);
+        }
+
+
+        /* Button Style 30: Flat Minimalist */
+        .button-flat-minimal {
+            background-color: #ffffff;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: none;
+            font-weight: normal;
+        }
+        .button-flat-minimal:hover {
+            background-color: #f2f2f2;
+            transform: none;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <button class="download-button button-primary">Download</button>
+    <button class="download-button button-success">Download</button>
+    <button class="download-button button-danger">Download</button>
+    <button class="download-button button-warning">Download</button>
+    <button class="download-button button-info">Download</button>
+    <button class="download-button button-outline-dark">Download</button>
+    <button class="download-button button-gradient-purple">Download</button>
+    <button class="download-button button-pill">Download</button>
+    <button class="download-button button-frosted">Download</button>
+    <button class="download-button button-ghost">Download</button>
+    <button class="download-button button-coral">Download</button>
+    <button class="download-button button-outline-teal">Download</button>
+    <button class="download-button button-elegant-grey">Download</button>
+    <button class="download-button button-gold">Download</button>
+    <button class="download-button button-dark-slate">Download</button>
+    <button class="download-button button-neon-green">Download</button>
+    <button class="download-button button-underline">Download</button>
+    <button class="download-button button-glassy-purple">Download</button>
+    <button class="download-button button-minimal-icon">Download</button>
+    <button class="download-button button-embossed">Download</button>
+
+    <button class="download-button button-playful-pink">Download</button>
+    <button class="download-button button-subtle-dash">Download</button>
+    <button class="download-button button-emerald">Download</button>
+    <button class="download-button button-skewed"><span>Download</span></button>
+    <button class="download-button button-carbon">Download</button>
+    <button class="download-button button-accent-left">Download</button>
+    <button class="download-button button-circle">Download</button>
+    <button class="download-button button-hover-fill">Download</button>
+    <button class="download-button button-3d-push">Download</button>
+    <button class="download-button button-flat-minimal">Download</button>
+
+    </body>
+</html>
