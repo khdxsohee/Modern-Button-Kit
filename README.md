@@ -21,7 +21,7 @@ A comprehensive collection of beautifully designed, modern CSS "Download" button
 - Clone or Download:
 
 ```
-git clone https://github.com/YOUR_USERNAME/ModernButtonKit.git
+git clone https://github.com/khdxsohee/Modern-Button-Kit.git
 ```
 - Or download the ZIP file directly from the GitHub repository.
 
